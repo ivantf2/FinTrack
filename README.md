@@ -60,25 +60,6 @@ lib/
     └── workout_provider.dart
 ```
 
-### Data flow
-
-The application follows a simple layered approach:
-
-```text
-UI Screens
-    ↓
-Providers
-    ↓
-Repositories
-    ↓
-Database / REST API
-```
-
-- **Screens** contain the user interface and user interactions.
-- **Providers** manage application state and notify the UI when data changes.
-- **Repositories** handle access to application data.
-- **Services** provide database and API functionality.
-- **Models** represent the application's data.
 
 ## Data Storage
 
@@ -135,7 +116,7 @@ The statistics chart displays the training volume for the most recent days and u
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ivantf2/FinTrack.git
 cd fittrack
 ```
 
@@ -156,10 +137,3 @@ flutter run -d windows
 The main application code is located in the `lib` directory.
 
 The project intentionally separates UI components, state management, data models and data access to make the code easier to maintain and extend.
-
-## Project Information
-
-**Project:** FitTrack  
-**Type:** Individual university project  
-**Framework:** Flutter  
-**Language:** Dart  
